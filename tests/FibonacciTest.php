@@ -46,7 +46,7 @@ class FibonacciTest extends TestCase
         $pairs = array("1" => 0, "2" => 1, "3" => 1, "4" => 2, "5" => 3, "6" => 5);
 
         foreach ($pairs as $index => $value) {
-            $calculatedValue = $this->fibonacci->getNextItemNumber((int)$index);
+            $calculatedValue = $this->fibonacci->getValueByIndex((int)$index);
             $this->assertEquals($value, $calculatedValue, sprintf("For index %s, calculated value % does not match passed %s", $index, $value, $calculatedValue));
         }
 
