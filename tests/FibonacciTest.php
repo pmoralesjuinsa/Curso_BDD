@@ -29,7 +29,7 @@ class FibonacciTest extends TestCase
     {
         $value = $this->fibonacci->getValueByIndex(2);
 
-        $this->assertEquals(0, $value, sprintf("Result for index 1 should be 0 and got %s", $value));
+        $this->assertEquals(1, $value, sprintf("Result for index 1 should be 0 and got %s", $value));
     }
 
 }
