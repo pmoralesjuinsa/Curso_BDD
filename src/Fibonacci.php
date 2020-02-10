@@ -11,7 +11,10 @@ class Fibonacci
 
     public function getValueByIndex($index)
     {
-        throw new Exception('Pending');
+        if($index == 1)
+        {
+            return 0;
+        }
     }
 
 }
