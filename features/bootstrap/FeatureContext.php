@@ -36,7 +36,7 @@ class FeatureContext implements Context
     }
 
     /**
-     * @Then I should be able to get the value :arg1
+     * @Then /^I should be able to get the value (\d+)$/
      */
     public function iShouldBeAbleToGetTheValue($value)
     {
