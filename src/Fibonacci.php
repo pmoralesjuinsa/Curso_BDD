@@ -15,6 +15,10 @@ class Fibonacci
         {
             return 0;
         }
+
+        if($index == 2) {
+            return 1;
+        }
     }
 
 }
