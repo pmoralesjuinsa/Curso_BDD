@@ -17,11 +17,13 @@ class FibonacciTest extends TestCase
     }
 
     /** @test */
-    public function if_index_is_one_return_value_0()
+    public function if_index_is_one_return_value_zero()
     {
-        $nextItemnumber = $this->fibonacci->getValueByIndex(1);
+        $value = $this->fibonacci->getValueByIndex(1);
 
-        $this->assertEquals(0, $nextItemnumber, sprintf("Result for index 1 should be 0 and got %s", $nextItemnumber));
+        $this->assertEquals(0, $value, sprintf("Result for index 1 should be 0 and got %s", $value));
     }
+
+
 
 }
