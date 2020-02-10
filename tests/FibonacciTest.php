@@ -17,7 +17,7 @@ class FibonacciTest extends TestCase
     }
 
     /** @test */
-    public function meme()
+    public function if_index_is_one_return_value_0()
     {
         $nextItemnumber = $this->fibonacci->getValueByIndex(1);
 
