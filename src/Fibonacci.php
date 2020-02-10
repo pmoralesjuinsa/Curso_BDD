@@ -11,14 +11,16 @@ class Fibonacci
 
     public function getValueByIndex($index)
     {
-        if($index == 1)
-        {
-            return 0;
+        $first = 0;
+        $second = 1;
+
+        for ($i = 0, $total = ($index - 1); $i < $total; $i++) {
+            $third = $first + $second;
+            $first = $second;
+            $second = $third;
         }
 
-        if($index == 2) {
-            return 1;
-        }
+        return $first;
     }
 
 }
