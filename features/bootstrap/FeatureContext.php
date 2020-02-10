@@ -38,8 +38,12 @@ class FeatureContext implements Context
     /**
      * @Then I should be able to get the value :arg1
      */
-    public function iShouldBeAbleToGetTheValue($arg1)
+    public function iShouldBeAbleToGetTheValue($value)
     {
-        throw new PendingException();
+        $calculatedValue = $this->fibonacci->getValueByIndex($this->indexNumber);
+
+        if($calculatedValue != $value) {
+            throw new Exception(sprintf("Result for index %s should be %s and got %s", $this->indexNumber, $value, $calculatedValue));
+        }
     }
 }
