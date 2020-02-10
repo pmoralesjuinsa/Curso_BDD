@@ -15,3 +15,4 @@ Feature: Test Fibonacci Sequence with Outline
     | 4     | 2       |
     | 5     | 3       |
     | 6     | 5       |
+    | 7     | 500     |
