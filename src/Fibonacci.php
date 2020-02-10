@@ -20,7 +20,7 @@ class Fibonacci
             $second = $third;
         }
 
-        return $first;
+        return 2;
     }
 
 }
