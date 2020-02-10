@@ -13,6 +13,7 @@ use Src\Fibonacci;
 class FeatureContext implements Context
 {
     private $fibonacci;
+    private $indexNumber;
 
     public function __construct()
     {
@@ -29,9 +30,9 @@ class FeatureContext implements Context
     /**
      * @When I pass the index :arg1
      */
-    public function iPassTheIndex($arg1)
+    public function iPassTheIndexValue($indexNumber)
     {
-        throw new PendingException();
+        $this->indexNumber = $indexNumber;
     }
 
     /**
